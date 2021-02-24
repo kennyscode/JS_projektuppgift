@@ -1,8 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: rgba(126, 214, 24, 0.863);
+
+    background-attachment: fixed;  
+    background-size: cover;
+    max-width: auto;
+    height: fit-content;
+    
 }
 
 .topnav {
@@ -22,24 +32,10 @@ body{
 }
     
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: rgb(58, 230, 16);
-    background-attachment: fixed;  
-    background-size: cover;
-    max-width: auto;
-    height: fit-content;
-    
-}
-
 header{
     text-align: center;
     margin: auto;
-    padding: 5%;
+    padding: 2%;
 }
 
 
