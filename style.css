@@ -28,7 +28,7 @@ body{
 }
 
 body {
-    background-color: greenyellow;
+    background-color: rgb(58, 230, 16);
     background-attachment: fixed;  
     background-size: cover;
     max-width: auto;
