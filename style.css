@@ -46,6 +46,7 @@ header{
 
 footer {
     position: fixed;
+    color: white;
     background-color: black;
     height: auto;
     bottom: 0px;
