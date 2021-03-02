@@ -1,8 +1,8 @@
 function searchSong(song) {
     let key = "lägg in en key här";
-    var cattractionBox = document.getElementsByClassName("AttractionInfoBox");
+    var cattractionBox = document.getElementsByClassName("ArtistInfoBox");
     if (cattractionBox.length > 0) {
-        Array.from(document.getElementsByClassName("AttractionInfoBox")).forEach(
+        Array.from(document.getElementsByClassName("ArtistInfoBox")).forEach(
             function(element, index, array) {
                 element.remove();
             }
@@ -27,7 +27,7 @@ function searchSong(song) {
       .then(function(song) {
           if (document.getElementById("SongBox").checked) {
               DisplaySong(song)
-          } else if (document.getElementById("AttractionBox").checked) {
+          } else if (document.getElementById("ArtistBox").checked) {
               getAttraction(artist)
           } else {
               DisplaySong(song)
