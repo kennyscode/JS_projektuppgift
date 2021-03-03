@@ -7,22 +7,27 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(126, 214, 24, 0.863);
-
-    background-attachment: fixed;  
+    background-attachment: fixed;
     background-size: cover;
     max-width: auto;
     height: fit-content;
-    
 }
 
 .topnav {
     background-color: rgba(0, 0, 0, 0.877);
     overflow: hidden;
-    
-   
- }
+}
 
-  .topnav h1 {
+.card {
+    margin: 0 auto;
+    
+    float: none;
+    
+    margin-bottom: 10px;
+    
+}
+
+.topnav h1 {
     margin-left: 10px;
     color: #f2f2f2;
     padding: 14px 16px;
@@ -30,15 +35,12 @@ body {
     font-size: 30px;
     display: inline-block;
 }
-    
 
-header{
+header {
     text-align: center;
     margin: auto;
     padding: 2%;
 }
-
-
 
 footer {
     position: fixed;
@@ -48,4 +50,4 @@ footer {
     bottom: 0px;
     width: 100%;
     text-align: center;
-  }
+}
