@@ -2,7 +2,7 @@ window.onload = function () {
     const button = document.getElementById("go");
     button.addEventListener("click", function () {
         const movieSearch = document.getElementById('movieSearchField').value;
-        searchMovie(movieSearch);
+        getMovie(movieSearch);
 
     });
 
@@ -16,7 +16,7 @@ window.onload = function () {
 }
 
 
-function searchMovie(movieName) {
+function getMovie(movieName) {
     let key = "6d425fc4";
     var cattractionBox = document.getElementsByClassName("ArtistInfoBox");
     if (cattractionBox.length > 0) {
@@ -51,11 +51,11 @@ function searchMovie(movieName) {
 
 function DisplayMovie(movie) {
     document.getElementById("movieCard").style.display = null;
-    var title = document.getElementById("movieTitle");
+    const title = document.getElementById("movieTitle");
     title.innerHTML = movie.Title;
-    var desc = document.getElementById("movieDescription");
+    const desc = document.getElementById("movieDescription");
     desc.innerHTML = movie.Plot;
-    var img = document.getElementById("moviePoster");
+    const img = document.getElementById("moviePoster");
     img.src = movie.Poster;
 
 
