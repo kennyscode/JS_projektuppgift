@@ -1,5 +1,3 @@
-function getMovie(movieName) {
-
 window.onload = function () {
     const button = document.getElementById("go");
     button.addEventListener("click", function () {
@@ -61,5 +59,4 @@ function DisplayMovie(movie) {
     img.src = movie.Poster;
 
 
-}
 }
