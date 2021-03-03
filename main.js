@@ -1,8 +1,8 @@
 function searchMovie(movieName) {
     let key = "6d425fc4";
-    var cattractionBox = document.getElementsByClassName("ArtistInfoBox");
+    var cattractionBox = document.getElementsByClassName("MovieInfoBox");
     if (cattractionBox.length > 0) {
-        Array.from(document.getElementsByClassName("ArtistInfoBox")).forEach(
+        Array.from(document.getElementsByClassName("MovieInfoBox")).forEach(
             function(element, index, array) {
                 element.remove();
             }
@@ -10,7 +10,6 @@ function searchMovie(movieName) {
     }
 
     
-
     fetch('http://www.omdbapi.com/?apikey=' + key + '&t=' + movieName)
         .then(function(response) {
             if (response.ok) {
@@ -31,6 +30,7 @@ function searchMovie(movieName) {
         });
 }
 
+
 function DisplayMovie(movie) {
     document.getElementById("movieCard").style.display = null;
     var title = document.getElementById("movieTitle");
@@ -40,5 +40,5 @@ function DisplayMovie(movie) {
     var img = document.getElementById("moviePoster");
     img.src = movie.Poster;
     
-
 }
+
