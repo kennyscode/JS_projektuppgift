@@ -19,12 +19,11 @@ body {
 }
 
 .card {
-    margin: 0 auto;
-    
+    margin: 0.5in auto;
     float: none;
-    
     margin-bottom: 10px;
-    
+    background-color: whitesmoke;
+    box-shadow: 5px 10px 8px yellow;
 }
 
 .topnav h1 {
