@@ -1,4 +1,4 @@
-function searchMovie(movieName) {
+function getMovie(movieName) {
     let key = "6d425fc4";
     const cattractionBox = document.getElementsByClassName("MovieInfoBox");
     if (cattractionBox.length > 0) {
