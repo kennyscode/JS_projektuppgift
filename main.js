@@ -29,7 +29,7 @@ function getMovie(movieName) {
 
 
 
-    fetch('http://www.omdbapi.com/?apikey=' + key + '&t=' + movieName)
+    fetch('https://www.omdbapi.com/?apikey=' + key + '&t=' + movieName)
         .then(function (response) {
             if (response.ok) {
                 return response.json();
