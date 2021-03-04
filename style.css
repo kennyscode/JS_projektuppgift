@@ -24,7 +24,7 @@ body {
     margin-bottom: 10px;
     background-color: rgb(240, 243, 247);
     box-shadow: 5px 10px 8px rgb(51, 51, 51);
-    
+    font-family: "Times New Roman", Times, serif;
 }
 
 .topnav h1 {
