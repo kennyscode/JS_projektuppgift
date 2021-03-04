@@ -18,9 +18,9 @@ window.onload = function () {
 
 function getMovie(movieName) {
     let key = "6d425fc4";
-    var cattractionBox = document.getElementsByClassName("ArtistInfoBox");
+    var cattractionBox = document.getElementsByClassName("MovieInfoBox");
     if (cattractionBox.length > 0) {
-        Array.from(document.getElementsByClassName("ArtistInfoBox")).forEach(
+        Array.from(document.getElementsByClassName("MovieInfoBox")).forEach(
             function (element, index, array) {
                 element.remove();
             }
@@ -36,7 +36,7 @@ function getMovie(movieName) {
             } else if (response.status === 400 || response.status === 404) {
                 alert(city + " Ingen film hittades.")
             } else if (response.status === 500) {
-                alert("Försök igen.")
+                alert("FELAKTIG INPUT. VÄNLIGEN FÖRSÖK IGEN.")
             } else {
                 alert("Försök igen.")
             }
